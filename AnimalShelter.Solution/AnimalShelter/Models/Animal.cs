@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace ProjectName.Models
+namespace AnimalShelter.Models
 {
-  public class ClassName
+  public class Animal
   {
-    public int ClassNameId { get; set; }
+    public int AnimalId { get; set; }
+    public string Type { get; set; }
     
   }
 }

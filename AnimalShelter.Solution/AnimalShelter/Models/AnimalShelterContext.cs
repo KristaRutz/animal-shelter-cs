@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ProjectName.Models
+namespace AnimalShelter.Models
 {
-  public class ProjectNameContext : DbContext
+  public class AnimalShelterContext : DbContext
   {
-    public DbSet<ClassName> ClassesName { get; set; }
+    public DbSet<Animal> Animals { get; set; }
 
-    public ProjectNameContext(DbContextOptions options) : base(options) { }
+    public AnimalShelterContext(DbContextOptions options) : base(options) { }
   }
 }

@@ -1,8 +1,11 @@
 @{
+  ViewBag.Title = "All animals";
   Layout = "_Layout";
 }
 
-@using ProjectName.Models;
-@model List<ProjectName.Models.ClassName>;
+@using AnimalShelter.Models;
+@model List<AnimalShelter.Models.Animal>;
 
 @* Razor code goes here *@
+
+<p>@Html.ActionLink("Back to Home", "Index", "Home")</p>

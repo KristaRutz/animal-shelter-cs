@@ -6,9 +6,9 @@
 
 ## Pair Program WFH Summary
 
-* To Do List Lesson
+* Follow along To Do List Lesson
 * Animal Shelter Project
-* Struggles: PC user unable to host LiveShare when paired with a MAC user
+* Struggles: PC user unable to host LiveShare when paired with a MAC/Epicodus user
 
 ## Setup/Installation Requirements
 
