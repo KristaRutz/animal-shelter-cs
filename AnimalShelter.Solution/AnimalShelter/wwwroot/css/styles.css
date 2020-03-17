@@ -2,7 +2,16 @@ h1 {
   font-family: 'Dancing Script', cursive;
 }
 
+h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 16pt;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
+}
+
+.form input {
+  margin: 15px;
 }
