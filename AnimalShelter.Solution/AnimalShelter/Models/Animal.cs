@@ -9,15 +9,15 @@ namespace AnimalShelter.Models
     public string Name { get; set; }
     public string Gender { get; set; }
     public DateTime DateAdmitted { get; set; }
-    public AnimalType AnimalType { get; set; }
+    public string AnimalType { get; set; }
     public string Breed { get; set; }
   }
 
   public enum AnimalType
   {
-    Cat,
-    Dog,
-    Critter,
-    Other    
+    cat,
+    dog,
+    critter,
+    other    
   }
 }

@@ -35,5 +35,11 @@ namespace AnimalShelter.Controllers
       return RedirectToAction("Index");
     }
 
+    public ActionResult Details(int id)
+    {
+      Animal model = _db.Animals.FirstOrDefault(animals => animals.AnimalId == id);
+      return View(model);
+    }
+
   }
 }

@@ -1,0 +1,28 @@
+@{
+    Layout = "_Layout";
+}
+
+@model AnimalShelter.Models.Animal
+
+<h2>Animal Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
+
+@if (Model.Gender == "F")
+{
+    <p>@Html.DisplayNameFor(model => model.Gender): Female</p>
+}
+
+@if (Model.Gender == "M")
+{
+    <p>@Html.DisplayNameFor(model => model.Gender): Male</p>
+}
+
+
+<p>Date Admitted: @Html.DisplayFor(model => model.DateAdmitted.Month)/@Html.DisplayFor(model => model.DateAdmitted.Day)/@Html.DisplayFor(model => model.DateAdmitted.Year)</p>
+
+<p>Type of Animal: @Html.DisplayFor(model => model.AnimalType)</p>
+
+<p>@Html.DisplayNameFor(model => model.Breed): @Html.DisplayFor(model => model.Breed)</p>
+
+<p>@Html.ActionLink("Back to list", "Index")</p>
