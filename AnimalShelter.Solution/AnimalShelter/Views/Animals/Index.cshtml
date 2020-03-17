@@ -4,21 +4,26 @@
 }
 
 @using AnimalShelter.Models;
-@model List<AnimalShelter.Models.Animal>;
+@model Dictionary<string, List<Animal>>;
+@* @model List<AnimalShelter.Models.Animal>; *@
 
 <h1>Animals in our Shelter</h1>
 
-@if (Model.Count == 0)
+@if (Model["sortBy"].Count == 0)
 {
   <h4>There are currently no animals at the shelter.</h4>
 }
+else
+{
+  <p>@Html.ActionLink("Sort By Name", "Index", new { sortBy = "byName" }) | @Html.ActionLink("Sort By Breed", "Index", new { sortBy = "byBreed" }) | @Html.ActionLink("Sort By Type", "Index", new { sortBy = "byType" }) | @Html.ActionLink("Sort By Admission Date", "Index", new { sortBy = "byDateAdmitted" })</p>
 
-<ul class="list">
-  @foreach (Animal animal in Model)
-  {
+  <ul class="list">
+    @foreach (Animal animal in Model["sortBy"])
+    {
       <li>@Html.ActionLink($"{animal.Name}", "Details", new { id = animal.AnimalId })</li>
-  }
-</ul>
+    }
+  </ul>
+}
 
 <p>@Html.ActionLink("Add an animal", "Create")</p>
 <p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
