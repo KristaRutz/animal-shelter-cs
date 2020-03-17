@@ -13,7 +13,7 @@
   <h4>There are currently no animals at the shelter.</h4>
 }
 
-<ul>
+<ul class="list">
   @foreach (Animal animal in Model)
   {
       <li>@Html.ActionLink($"{animal.Name}", "Details", new { id = animal.AnimalId })</li>

@@ -5,6 +5,7 @@ h1 {
 h4 {
   font-family: 'Dancing Script', cursive;
   font-size: 16pt;
+  
 }
 
 body {
@@ -16,6 +17,6 @@ body {
   margin: 15px;
 }
 
-li {
+ul {
   list-style-type: none;
 }
